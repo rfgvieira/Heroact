@@ -1,12 +1,13 @@
 import Banner from './components/Banner/Banner';
+import Form from './components/Form/Form';
+
 
 function App() {
   return (
-
-    <header className="banner">
+    <div className="App">
       <Banner />
-      </header>
-      
+      <Form />
+    </div>
   );
 }
 

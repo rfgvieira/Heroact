@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import Banner from './components/Banner/Banner';
 import Form from './components/Form/Form';
-
+import Universe from './components/Universe/Universe';
+import { universeItems } from "./utils/Constants";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Banner />
       <Form onHeroSubmitted = {hero => OnNewHero(hero)} />
+      {universeItems().map(universe => <Universe key = {universe.name} name = {universe.name}/>)}
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.hero-card{
+    width: 280px;
+}
+
+.hero-card .header{
+    border: 10px 10px 0px 0px;
+}
+
+.hero-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.hero-card .footer{
+    background-color: #FFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.hero-card .footer h4{
+    color: #6278F7;
+    font-size: 18px;
+    line-height: 22px;
+}

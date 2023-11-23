@@ -11,7 +11,7 @@ const Form = (props) =>{
     const [name, setName] = useState("")
     const [power, setPower] = useState("")
     const [image, setImage] = useState("")
-    const [universe, setUniverse] = useState("")
+    const [universe, setUniverse] = useState("DC")
 
     const onSave = (event) => {
         event.preventDefault()
@@ -21,6 +21,11 @@ const Form = (props) =>{
             image,
             universe
         })
+
+        setName("") 
+        setPower("") 
+        setUniverse("DC") 
+        setImage("") 
     }
 
     return(

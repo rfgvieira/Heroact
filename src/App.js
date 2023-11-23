@@ -20,7 +20,14 @@ function App() {
     <div className="App">
       <Banner />
       <Form onHeroSubmitted = {hero => OnNewHero(hero)} />
-      {universeItems().map(universe => <Universe key = {universe.name} name = {universe.name}/>)}
+      {universeItems().map(universe => 
+      <Universe
+        key = {universe.name} 
+        name = {universe.name} 
+        primaryColor = {universe.primaryColor} 
+        secondaryColor = {universe.secondaryColor}
+        heroes = {heroes.filter( heroes => universe.name === heroes.universe)}/>
+      )}
     </div>
   );
 }
